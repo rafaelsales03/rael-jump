@@ -17,11 +17,14 @@ body {
     height: 80vh;
     max-width: 400px;
     max-height: 600px;
+    position: relative;
+    bottom: 80px;
 }
 
 #startScreen,
 #gameOverScreen {
     position: absolute;
+    top: 250px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
@@ -54,9 +57,11 @@ button:hover {
 }
 
 .colorButton {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 0 10px;
+    position: relative;
+    bottom: 30px;
     border: none;
     cursor: pointer;
     border-radius: 50%;
@@ -69,9 +74,11 @@ button:hover {
 
 @media (max-width: 600px) {
     .colorButton {
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+        position: relative;
+        bottom: 50px;
     }
 
     button {
